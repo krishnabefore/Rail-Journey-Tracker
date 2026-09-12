@@ -1,0 +1,78 @@
+{
+  "1234567890": {
+    "train_name": "Rajdhani Express",
+    "TrainNo": "12301",
+    "Doj": "2026-09-10",
+    "class": "3A",
+    "chartStatus": "Chart Not Prepared",
+    "boardingStation": "New Delhi",
+    "destinationStation": "Howrah Jn",
+    "passengers": [
+      { "name": "Passenger 1", "bookingStatus": "WL15", "currentStatus": "RAC4" },
+      { "name": "Passenger 2", "bookingStatus": "CNF", "currentStatus": "CNF" }
+    ],
+    "route": [
+      { "station": "New Delhi", "type": "origin" },
+      { "station": "Kanpur Central", "type": "stop" },
+      { "station": "Mughalsarai Jn", "type": "stop" },
+      { "station": "Howrah Jn", "type": "destination" }
+    ]
+  },
+  "9876543210": {
+    "train_name": "Shatabdi Express",
+    "TrainNo": "12002",
+    "Doj": "2026-09-12",
+    "class": "CC",
+    "chartStatus": "Chart Prepared",
+    "boardingStation": "Bhopal",
+    "destinationStation": "New Delhi",
+    "passengers": [
+      { "name": "Passenger 1", "bookingStatus": "WL2", "currentStatus": "CNF" }
+    ],
+    "route": [
+      { "station": "Bhopal", "type": "origin" },
+      { "station": "Jhansi Jn", "type": "stop" },
+      { "station": "Agra Cantt", "type": "stop" },
+      { "station": "New Delhi", "type": "destination" }
+    ]
+  },
+  "1122334455": {
+    "train_name": "Duronto Express",
+    "TrainNo": "12213",
+    "Doj": "2026-09-15",
+    "class": "SL",
+    "chartStatus": "Chart Not Prepared",
+    "boardingStation": "Mumbai CST",
+    "destinationStation": "Chennai Central",
+    "passengers": [
+      { "name": "Passenger 1", "bookingStatus": "WL30", "currentStatus": "WL18" },
+      { "name": "Passenger 2", "bookingStatus": "WL31", "currentStatus": "WL19" },
+      { "name": "Passenger 3", "bookingStatus": "CNF", "currentStatus": "CNF" }
+    ],
+    "route": [
+      { "station": "Mumbai CST", "type": "origin" },
+      { "station": "Pune Jn", "type": "stop" },
+      { "station": "Bangalore City", "type": "stop" },
+      { "station": "Chennai Central", "type": "destination" }
+    ]
+  },
+  "5566778899": {
+    "train_name": "Vande Bharat Express",
+    "TrainNo": "22439",
+    "Doj": "2026-09-20",
+    "class": "EC",
+    "chartStatus": "Chart Prepared",
+    "boardingStation": "New Delhi",
+    "destinationStation": "Varanasi Jn",
+    "passengers": [
+      { "name": "Passenger 1", "bookingStatus": "CNF", "currentStatus": "CNF" },
+      { "name": "Passenger 2", "bookingStatus": "RAC3", "currentStatus": "CNF" }
+    ],
+    "route": [
+      { "station": "New Delhi", "type": "origin" },
+      { "station": "Kanpur Central", "type": "stop" },
+      { "station": "Prayagraj Jn", "type": "stop" },
+      { "station": "Varanasi Jn", "type": "destination" }
+    ]
+  }
+}

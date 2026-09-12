@@ -1,0 +1,93 @@
+[
+  {
+    "trainNumber": "12951",
+    "trainName": "Mumbai Rajdhani",
+    "fromStation": "New Delhi",
+    "fromCode": "NDLS",
+    "toStation": "Mumbai Central",
+    "toCode": "BCT",
+    "departureTime": "16:25",
+    "arrivalTime": "08:15",
+    "duration": "15h 50m",
+    "classes": ["1A", "2A", "3A"],
+    "runsOn": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  {
+    "trainNumber": "12009",
+    "trainName": "Shatabdi Express",
+    "fromStation": "New Delhi",
+    "fromCode": "NDLS",
+    "toStation": "Bhopal",
+    "toCode": "BPL",
+    "departureTime": "06:00",
+    "arrivalTime": "13:50",
+    "duration": "7h 50m",
+    "classes": ["CC", "EC"],
+    "runsOn": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+  },
+  {
+    "trainNumber": "12622",
+    "trainName": "Tamil Nadu Express",
+    "fromStation": "New Delhi",
+    "fromCode": "NDLS",
+    "toStation": "Chennai Central",
+    "toCode": "MAS",
+    "departureTime": "22:30",
+    "arrivalTime": "07:15",
+    "duration": "32h 45m",
+    "classes": ["SL", "3A", "2A"],
+    "runsOn": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  {
+    "trainNumber": "12951",
+    "trainName": "August Kranti Rajdhani",
+    "fromStation": "Mumbai Central",
+    "fromCode": "BCT",
+    "toStation": "New Delhi",
+    "toCode": "NDLS",
+    "departureTime": "17:00",
+    "arrivalTime": "09:55",
+    "duration": "16h 55m",
+    "classes": ["1A", "2A", "3A"],
+    "runsOn": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  {
+    "trainNumber": "12615",
+    "trainName": "Grand Trunk Express",
+    "fromStation": "New Delhi",
+    "fromCode": "NDLS",
+    "toStation": "Chennai Central",
+    "toCode": "MAS",
+    "departureTime": "18:40",
+    "arrivalTime": "06:45",
+    "duration": "36h 05m",
+    "classes": ["SL", "3A", "2A", "1A"],
+    "runsOn": ["Mon", "Wed", "Fri"]
+  },
+  {
+    "trainNumber": "22691",
+    "trainName": "Rajdhani Express",
+    "fromStation": "Bangalore City",
+    "fromCode": "SBC",
+    "toStation": "New Delhi",
+    "toCode": "NDLS",
+    "departureTime": "20:00",
+    "arrivalTime": "05:30",
+    "duration": "33h 30m",
+    "classes": ["1A", "2A", "3A"],
+    "runsOn": ["Tue", "Thu", "Sat"]
+  },
+  {
+    "trainNumber": "12269",
+    "trainName": "Duronto Express",
+    "fromStation": "Mumbai CST",
+    "fromCode": "CSTM",
+    "toStation": "Bangalore City",
+    "toCode": "SBC",
+    "departureTime": "23:05",
+    "arrivalTime": "18:30",
+    "duration": "19h 25m",
+    "classes": ["SL", "3A", "2A"],
+    "runsOn": ["Mon", "Thu"]
+  }
+]

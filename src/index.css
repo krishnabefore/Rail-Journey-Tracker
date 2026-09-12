@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@theme {
+  --color-signal-navy: #1B2A4A;
+  --color-page-bg: #EBF0F6;
+  --color-ticket-cream: #F7F3E9;
+  --color-signal-rust: #C1440E;
+  --color-signal-green: #3A7D44;
+  --color-signal-amber: #D9A62E;
+
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* Ticket-stub notch effect: a dashed vertical divider with
+   circular "punch holes" top and bottom, like a real ticket stub. */
+.ticket-notch {
+  position: relative;
+  border-right: 2px dashed #d1cbb8;
+}
+
+.ticket-notch::before,
+.ticket-notch::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background: var(--color-ticket-cream);
+  border-radius: 50%;
+}
+
+.ticket-notch::before {
+  top: -10px;
+}
+
+.ticket-notch::after {
+  bottom: -10px;
+}
+
+/* One deliberate entrance animation for the results — like a ticket
+   being issued. Applied once, not on every hover/interaction. */
+@keyframes ticket-issue {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-ticket-issue {
+  animation: ticket-issue 0.4s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ticket-issue {
+    animation: none;
+  }
+}
