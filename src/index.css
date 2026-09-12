@@ -17,6 +17,14 @@ body {
   font-family: var(--font-sans);
 }
 
+/* Bridge photo background — shown at its true colors, no tint. */
+.rail-bg {
+  background-image: url('./assets/bridge-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 /* Ticket-stub notch effect: a dashed vertical divider with
    circular "punch holes" top and bottom, like a real ticket stub. */
 .ticket-notch {
@@ -64,4 +72,11 @@ body {
   .animate-ticket-issue {
     animation: none;
   }
+}
+
+/* A soft light-colored glow behind text that sits directly on the
+   photo background (no card), keeping it crisp without adding any
+   tint to the photo itself. */
+.text-crisp {
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8), 0 0 8px rgba(255, 255, 255, 0.5);
 }

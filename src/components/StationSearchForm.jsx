@@ -30,10 +30,10 @@ export function StationSearchForm({ onSearch, isLoading }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-md mx-auto">
+    <form onSubmit={handleSubmit} className="w-full max-w-2xl mx-auto">
       <div className="flex gap-2">
         <div className="flex-1">
-          <label htmlFor="from-code" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="from-code" className="block text-sm font-medium text-black mb-1 text-crisp">
             From
           </label>
           <input
@@ -43,12 +43,12 @@ export function StationSearchForm({ onSearch, isLoading }) {
             onChange={(e) => setFrom(e.target.value.toUpperCase())}
             placeholder="e.g. NDLS"
             maxLength={5}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg font-mono focus:outline-none focus:ring-2 focus:ring-signal-navy/30"
+            className="w-full px-5 py-3 text-lg border border-gray-300 rounded-lg font-mono focus:outline-none focus:ring-2 focus:ring-signal-navy/30"
           />
         </div>
 
         <div className="flex-1">
-          <label htmlFor="to-code" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="to-code" className="block text-sm font-medium text-black mb-1 text-crisp">
             To
           </label>
           <input
@@ -58,7 +58,7 @@ export function StationSearchForm({ onSearch, isLoading }) {
             onChange={(e) => setTo(e.target.value.toUpperCase())}
             placeholder="e.g. BCT"
             maxLength={5}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg font-mono focus:outline-none focus:ring-2 focus:ring-signal-navy/30"
+            className="w-full px-5 py-3 text-lg border border-gray-300 rounded-lg font-mono focus:outline-none focus:ring-2 focus:ring-signal-navy/30"
           />
         </div>
       </div>
@@ -66,7 +66,7 @@ export function StationSearchForm({ onSearch, isLoading }) {
       <button
         type="submit"
         disabled={isLoading}
-        className="w-full mt-3 px-5 py-2 bg-signal-navy text-white font-medium rounded-lg hover:bg-signal-navy/90 active:scale-95 disabled:bg-gray-400 disabled:cursor-not-allowed transition-all"
+        className="w-full mt-3 px-7 py-3 text-lg bg-signal-navy text-white font-medium rounded-lg hover:bg-signal-navy/90 active:scale-95 disabled:bg-gray-400 disabled:cursor-not-allowed transition-all"
       >
         {isLoading ? 'Searching...' : 'Search Trains'}
       </button>
@@ -75,7 +75,7 @@ export function StationSearchForm({ onSearch, isLoading }) {
         <p className="mt-2 text-sm text-red-600 text-center">{validationError}</p>
       )}
 
-      <p className="mt-3 text-xs text-gray-400 text-center">
+      <p className="mt-3 text-xs text-black text-center ">
         Try: {EXAMPLE_CODES.map((s) => `${s.code} (${s.name})`).join(' · ')}
       </p>
     </form>

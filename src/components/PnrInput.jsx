@@ -33,8 +33,8 @@ export function PnrInput({ onSearch, isLoading }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-md mx-auto">
-      <label htmlFor="pnr-input" className="block text-sm font-medium text-gray-700 mb-1">
+    <form onSubmit={handleSubmit} className="w-full max-w-2xl mx-auto">
+      <label htmlFor="pnr-input" className="block text-sm font-medium text-black mb-1 ">
         Enter PNR Number
       </label>
 
@@ -46,7 +46,7 @@ export function PnrInput({ onSearch, isLoading }) {
           value={pnr}
           onChange={handleChange}
           placeholder="e.g. 1234567890"
-          className={`flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 transition-shadow ${
+          className={`flex-1 px-5 py-3 text-lg border rounded-lg focus:outline-none focus:ring-2 transition-shadow ${
             validationError
               ? 'border-red-400 focus:ring-red-300'
               : 'border-gray-300 focus:ring-signal-navy/30'
@@ -55,7 +55,7 @@ export function PnrInput({ onSearch, isLoading }) {
         <button
           type="submit"
           disabled={isLoading}
-          className="px-5 py-2 bg-signal-navy text-white font-medium rounded-lg hover:bg-signal-navy/90 active:scale-95 disabled:bg-gray-400 disabled:cursor-not-allowed transition-all"
+          className="px-7 py-3 text-lg bg-signal-navy text-white font-medium rounded-lg hover:bg-signal-navy/90 active:scale-95 disabled:bg-gray-400 disabled:cursor-not-allowed transition-all"
         >
           {isLoading ? 'Checking...' : 'Check Status'}
         </button>
@@ -65,7 +65,7 @@ export function PnrInput({ onSearch, isLoading }) {
         <p className="mt-2 text-sm text-red-600">{validationError}</p>
       )}
 
-      <p className="mt-1 text-xs text-gray-400">{pnr.length}/10 digits</p>
+      <p className="mt-1 text-xs text-black ">{pnr.length}/10 digits</p>
     </form>
   )
 }

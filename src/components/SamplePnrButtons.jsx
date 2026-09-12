@@ -14,7 +14,7 @@ const SAMPLE_PNRS = [
 export function SamplePnrButtons({ onSelect }) {
   return (
     <div className="max-w-md mx-auto mt-4 text-center">
-      <p className="text-xs text-gray-400 mb-2">Try a sample PNR:</p>
+      <p className="text-xs text-gray-500 mb-2 text-crisp">Try a sample PNR:</p>
       <div className="flex flex-wrap justify-center gap-2">
         {SAMPLE_PNRS.map(({ pnr, label }) => (
           <button

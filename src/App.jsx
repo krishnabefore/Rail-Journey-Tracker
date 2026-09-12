@@ -19,8 +19,8 @@ function App() {
   const { results, status: trainStatus, searchTrains } = useTrainSearch()
 
   return (
-    <div className="min-h-screen bg-page-bg py-12 px-4">
-      <h1 className="text-3xl font-bold text-center text-signal-navy mb-6">
+    <div className="min-h-screen rail-bg py-12 px-4">
+      <h1 className="text-3xl font-bold text-center text-signal-navy mb-6 text-crisp">
         Rail Journey Tracker
       </h1>
 
@@ -55,7 +55,7 @@ function App() {
 
           <div className="max-w-md mx-auto mt-8">
             {status === 'loading' && (
-              <p className="text-center text-gray-500">Checking PNR status...</p>
+              <p className="text-center text-gray-600 text-crisp">Checking PNR status...</p>
             )}
 
             {status === 'error' && (
@@ -89,11 +89,11 @@ function App() {
 
           <div className="max-w-md mx-auto mt-4">
             {trainStatus === 'loading' && (
-              <p className="text-center text-gray-500 mt-4">Searching trains...</p>
+              <p className="text-center text-gray-600 mt-4 text-crisp">Searching trains...</p>
             )}
 
             {trainStatus === 'empty' && (
-              <p className="text-center text-gray-500 mt-4">
+              <p className="text-center text-gray-600 mt-4 text-crisp">
                 No trains found for that route. Try NDLS → BCT.
               </p>
             )}
